@@ -11,7 +11,10 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/css/glavnaya.css', 
                 'resources/js/glavnaya.js',
-            
+                'resources/css/create.css', 
+                'resources/js/create.js',
+                'resources/css/infoblini.css', 
+                'resources/js/infoblini.js',
             
             
             ],

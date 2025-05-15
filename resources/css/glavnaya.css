@@ -29,6 +29,11 @@ body {
     padding: 0 15px;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 /* Header */
 header {
     background-color: var(--white-color);

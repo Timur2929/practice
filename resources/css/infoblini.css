@@ -1,0 +1,56 @@
+.recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+    .recipe-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+.star-rating .star {
+    cursor: pointer;
+    color: #e0e0e0;
+    transition: color 0.2s;
+}
+.star-rating .star.active {
+    color: #FFD700;
+}
+.recipe-step {
+    counter-increment: step-counter;
+    position: relative;
+    padding-left: 2.5rem;
+}
+.recipe-step::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}

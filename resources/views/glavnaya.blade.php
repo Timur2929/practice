@@ -14,7 +14,7 @@
             <nav class="navbar">
                 <a href="{{ url('/') }}" class="logo">Blinow</a>
                 <div class="nav-links">
-                    <a href="#">Создать рецепт</a> 
+                    <a href="{{ url('/create') }}">Создать рецепт</a> 
                     <a href="#">Коллекции</a>
                 </div>
             </nav>
@@ -90,7 +90,7 @@
                 </div>
 
                 <!-- Recipe Card 2 -->
-                <div class="recipe-card">
+               <a href="{{ url('/infoblini') }}"> <div class="recipe-card">
                     <!-- <img src="https://via.placeholder.com/400x300" alt="Блины классические" class="recipe-img"> -->
                     <div class="recipe-info">
                         <div class="recipe-meta">
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-
+               </a>
                 <!-- Recipe Card 3 -->
                 <div class="recipe-card">
                     <!-- <img src="https://via.placeholder.com/400x300" alt="Паста карбонара" class="recipe-img"> -->
